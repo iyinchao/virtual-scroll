@@ -119,9 +119,11 @@ export default class VirtualScroll {
 
       document.body.addEventListener("pointermove", this._onTouchMove);
 
-      const onPointerUp = () => {
+      const onPointerUp = (e) => {
+        console.log(e.type);
         document.body.removeEventListener("pointermove", this._onTouchMove);
         document.body.removeEventListener("pointerup", onPointerUp);
+        document.body.removeEventListener("pointerleave", onPointerUp);
 
         this.#pointerDownPos = null;
         this.#isCurrentPointerEvent = false;
@@ -137,6 +139,7 @@ export default class VirtualScroll {
       };
 
       document.body.addEventListener("pointerup", onPointerUp);
+      document.body.addEventListener("pointerleave", onPointerUp);
     }
   };
 
