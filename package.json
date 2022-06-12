@@ -1,5 +1,5 @@
 {
-  "name": "@tencent/virtual-scroll",
+  "name": "virtual-scroll-pointer",
   "version": "2.2.1",
   "description": "Enhanced Custom scroll events for smooth, fake scroll, with mouse pointer support.",
   "main": "lib/virtualscroll.js",
