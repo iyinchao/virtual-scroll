@@ -1,7 +1,7 @@
 {
-  "name": "virtual-scroll",
+  "name": "@tencent/virtual-scroll",
   "version": "2.2.1",
-  "description": "Custom scroll events for smooth, fake scroll",
+  "description": "Enhanced Custom scroll events for smooth, fake scroll, with mouse pointer support.",
   "main": "lib/virtualscroll.js",
   "source": "src/index.js",
   "scripts": {
@@ -19,6 +19,12 @@
     "smooth"
   ],
   "author": "Florian Morel",
+  "contributors": [
+    {
+      "name": "charlieyin",
+      "email": "charlieyin@tencent.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ayamflow/virtual-scroll/issues"
